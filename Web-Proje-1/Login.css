@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    align-items: center;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B262C;
+    font-family: sans-serif;
+}
+.conto{
+    max-width: 90%;
+}
+.loginform{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 67vh;
+}
+.loginformimg img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.login-form-right{
+    padding: 2rem;
+}
+.login-form-right h1{
+    margin-bottom: 2rem;
+}
+.login-form-right form input,.login-form-right form button{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 2px solid #FFCF00;
+    padding: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+}
+.login-form-right form input:focus{
+    border: 2px solid #ffd240cd;
+    box-shadow: 0 0 0px 2px r#FFCF00;
+}
+.login-form-right form input,.login-form-right form label{
+    color: #ffe9e9;
+    font-size: 0.8rem;
+}
+.login-form-right form button,.lobbtn{
+    background-color: #070600;
+    border: none;
+    color: #ffa200;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+.login-form-right form button:hover{
+    background-color: rgb(39, 41, 0);
+}
+
+/* respan for Desktop  */
+@media screen and (min-width:768px){
+    .loginform{
+     display: flex;
+     flex-direction: row;
+     background-color: #ffffff;
+     border-radius: 20px;
+     overflow: hidden;
+    }
+    .login-form-right{
+        padding: 5rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .loginformimg{
+        width: 50%;
+    }
+    .loginformimg img{
+        width: 100%;
+        height: 90vh;
+        display: block;
+    }
+}
+
+/* respan for Desktop */
